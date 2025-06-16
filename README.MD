@@ -47,17 +47,17 @@ A modern, responsive task management system built with Next.js frontend and Node
 ### Backend Setup
 
 1. Navigate to the server directory:
-\`\`\`bash
-cd app/server
-\`\`\`
+```bash
+cd server
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Create `.env` file:
-\`\`\`env
+```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/taskmanagement
 JWT_SECRET=your_jwt_secret_key_here
@@ -65,29 +65,29 @@ ENCRYPTION_KEY=your_32_character_encryption_key
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password
 NODE_ENV=development
-\`\`\`
+```
 
 4. Start the server:
-\`\`\`bash
+```
 npm run dev
-\`\`\`
+```
 
 ### Frontend Setup
 
 1. Navigate to the client directory:
-\`\`\`bash
-cd app/client
-\`\`\`
+```bash
+cd client
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 4. Open [http://localhost:3000](http://localhost:3000)
 
@@ -147,7 +147,7 @@ npm run dev
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **Next.js 14**: React framework with App Router
+- **Next.js 15**: React framework with App Router
 - **React 18**: Latest React features
 - **Redux Toolkit**: State management
 - **Tailwind CSS**: Utility-first CSS framework
@@ -170,8 +170,8 @@ npm run dev
 
 ## 📁 Project Structure
 
-\`\`\`
-app/
+```
+project-file/
 ├── client/                 # Next.js Frontend
 │   ├── app/
 │   │   ├── dashboard/      # Dashboard page
@@ -218,7 +218,7 @@ app/
     ├── .env                # Environment variables
     ├── package.json
     └── server.js           # Main server file
-\`\`\`
+```
 
 ## 🔧 API Endpoints
 
@@ -291,14 +291,8 @@ app/
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 🆘 Support
 
 For issues and questions, please create an issue in the GitHub repository.
 
----
-
-**Built with ❤️ using modern web technologies**

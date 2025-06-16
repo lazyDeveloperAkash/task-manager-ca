@@ -1,7 +1,5 @@
 const express = require("express")
-const jwt = require("jsonwebtoken")
-const User = require("../models/User")
-const { encrypt, decrypt } = require("../utils/encryption")
+const { decrypt } = require("../utils/encryption")
 const { auth } = require("../middleware/auth")
 const authController = require("../controllers/authController")
 

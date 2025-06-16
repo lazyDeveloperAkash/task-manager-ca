@@ -1,9 +1,6 @@
 const express = require("express")
-const Task = require("../models/Task")
-const User = require("../models/User")
 const { auth, adminAuth } = require("../middleware/auth")
-const { encrypt, decrypt } = require("../utils/encryption")
-const { sendTaskUpdateNotification } = require("../utils/email")
+const { decrypt } = require("../utils/encryption")
 const taskController = require("../controllers/taskController")
 
 const router = express.Router()

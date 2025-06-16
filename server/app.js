@@ -30,10 +30,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 // Routes
-app.use("/api/auth", require("./routes/auth"))
-app.use("/api/tasks", require("./routes/tasks"))
-app.use("/api/chat", require("./routes/chat"))
-app.use("/api/users", require("./routes/users"))
+app.use("/api", require("./routes/index"));
 
 // Socket.io for real-time chat
 io.on("connection", (socket) => {
